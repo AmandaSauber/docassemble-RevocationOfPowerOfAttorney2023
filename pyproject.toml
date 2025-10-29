@@ -1,0 +1,31 @@
+license = "MIT"
+license-files = [
+    "LICENSE",
+]
+
+[build-system]
+requires = [
+    "setuptools==80.9.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docassemble.RevocationOfPowerOfAttorney2023"
+version = "1.0"
+description = "Revocation of power of attorney"
+readme = "README.md"
+authors = [
+    { name = "Coleman Silver", email = "csilver2@su.suffolk.edu" },
+]
+dependencies = [
+    "docassemble.ALAnyState @ git+https://github.com/suffolklitlab/docassemble-alanystate.git@main",
+    "docassemble.AssemblyLine @ git+https://github.com/SuffolkLITLab/docassemble-AssemblyLine.git@main",
+]
+
+[project.urls]
+Homepage = "https://courtformsonline.org"
+
+[tool.setuptools.packages.find]
+where = [
+    ".",
+]

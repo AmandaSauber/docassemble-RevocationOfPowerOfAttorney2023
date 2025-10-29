@@ -10,8 +10,8 @@ metadata:
     Revocation of PoA
   description: |-
     This interview helps someone in Minnesota get a revocation of power of attorney.
-  tags:
-    - "ES-05-00-00-00"
+#  tags:
+#    - "ES-05-00-00-00"
   authors:
     - Coleman Silver
   original_form:
@@ -34,6 +34,9 @@ code: |
   AL_DEFAULT_STATE = "MN"
 ---
 code: |
+  AL_ORGANIZATION_TITLE = "LawHelpMN"  
+---
+code: |
   github_repo_name =  'docassemble-RevocationOfPowerOfAttorney2023'
 ---
 code: |
@@ -44,6 +47,7 @@ code: |
 ---
 objects:
   - users: ALPeopleList.using(ask_number=True,target_number=1)
+  - al_logo: DAStaticFile.using(filename="MNfavicon-96x96.png", alt_text="LawHelpMN") 
 ---
 sections:
   - review_revocation_of_power_of_attorney2023: Review your answers
